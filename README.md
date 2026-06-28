@@ -1,4 +1,11 @@
-# QuickMath CLI
+```
+ ██████╗ ██╗   ██╗██╗ ██████╗██╗  ██╗███╗   ███╗ █████╗ ████████╗██╗  ██╗
+██╔═══██╗██║   ██║██║██╔════╝██║ ██╔╝████╗ ████║██╔══██╗╚══██╔══╝██║  ██║
+██║   ██║██║   ██║██║██║     █████╔╝ ██╔████╔██║███████║   ██║   ███████║
+██║▄▄ ██║██║   ██║██║██║     ██╔═██╗ ██║╚██╔╝██║██╔══██║   ██║   ██╔══██║
+╚██████╔╝╚██████╔╝██║╚██████╗██║  ██╗██║ ╚═╝ ██║██║  ██║   ██║   ██║  ██║
+ ╚══▀▀═╝  ╚═════╝ ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝
+```
 
 [![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)
@@ -7,8 +14,6 @@
 [![macOS](https://img.shields.io/badge/macOS-supported-000000?logo=apple)](build.bat)
 
 A fast-paced terminal math game built in C# with [Spectre.Console](https://spectreconsole.net/). Challenge your arithmetic skills across addition, subtraction, and multiplication with multiple game modes and difficulty levels.
-
-![QuickMath CLI screenshot](docs/screenshot.svg)
 
 ## Features
 
