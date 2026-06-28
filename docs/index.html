@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickMath CLI &mdash; Train Your Mental Arithmetic</title>
+  <meta name="description" content="QuickMath is a terminal-based math trainer that builds your mental arithmetic speed through practice. Addition, subtraction, multiplication. Three game modes. Runs on Windows, macOS, Linux." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <span class="nav-mark">QM</span>
+      <div class="nav-links">
+        <a href="#modes">Modes</a>
+        <a href="#learn">Why</a>
+        <a href="#terminal">Demo</a>
+        <a href="https://github.com/pikmintea/QuickMath-CLI" class="nav-gh">GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-body">
+      <h1>
+        Train your
+        <span class="h-rainbow">arithmetic</span>
+        <br />at the speed of thought
+      </h1>
+      <p class="hero-sub">
+        QuickMath is a terminal game that drills addition, subtraction, and
+        multiplication until the answers come without thinking. No fluff.
+        No login. Just you, the numbers, and the clock.
+      </p>
+      <div class="hero-actions">
+        <a href="https://github.com/pikmintea/QuickMath-CLI/releases" class="btn btn-primary">Download for your OS</a>
+        <a href="#terminal" class="btn btn-ghost">See it in action &darr;</a>
+      </div>
+      <div class="hero-os">
+        <span>Windows</span><span class="dot">&middot;</span>
+        <span>macOS</span><span class="dot">&middot;</span>
+        <span>Linux</span>
+      </div>
+    </div>
+    <aside class="hero-equation">
+      <div class="eq-line"><span class="eq-num">18</span><span class="eq-op">+</span><span class="eq-num">7</span><span class="eq-op">=</span><span class="eq-ans blink">?</span></div>
+      <div class="eq-line off"><span class="eq-num">42</span><span class="eq-op">&times;</span><span class="eq-num">3</span><span class="eq-op">=</span><span class="eq-ans fade">126</span></div>
+      <div class="eq-line off"><span class="eq-num">95</span><span class="eq-op">&minus;</span><span class="eq-num">38</span><span class="eq-op">=</span><span class="eq-ans fade">57</span></div>
+    </aside>
+  </header>
+
+  <section class="section modes" id="modes">
+    <div class="section-label">Game Modes</div>
+    <h2>Three ways to practice,<br />one goal: get faster.</h2>
+    <div class="mode-cards">
+      <article class="mode-card">
+        <div class="mode-num">01</div>
+        <h3>Standard</h3>
+        <p>20 questions, 3 lives. A focused session with a clear endpoint &mdash; like a workout set. Track your score, streak, and accuracy across the round.</p>
+        <ul class="mode-stats">
+          <li><span class="stat-label">Questions</span><span>20</span></li>
+          <li><span class="stat-label">Lives</span><span>3</span></li>
+          <li><span class="stat-label">Best for</span><span>Daily warm-up</span></li>
+        </ul>
+      </article>
+      <article class="mode-card mode-card-featured">
+        <div class="mode-num">02</div>
+        <h3>Infinite</h3>
+        <p>No end &mdash; just a steady stream of problems until you run out of lives. This is where real fluency builds. Keep your streak alive as long as you can.</p>
+        <ul class="mode-stats">
+          <li><span class="stat-label">Questions</span><span>&infin;</span></li>
+          <li><span class="stat-label">Lives</span><span>3</span></li>
+          <li><span class="stat-label">Best for</span><span>Deep practice</span></li>
+        </ul>
+      </article>
+      <article class="mode-card">
+        <div class="mode-num">03</div>
+        <h3>Timed</h3>
+        <p>60 seconds, no lives, every second counts. The clock changes how you think &mdash; you learn to trust your instant recall rather than counting through each step.</p>
+        <ul class="mode-stats">
+          <li><span class="stat-label">Duration</span><span>60s</span></li>
+          <li><span class="stat-label">Lives</span><span>Unlimited</span></li>
+          <li><span class="stat-label">Best for</span><span>Pressure training</span></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section diffs">
+    <div class="section-label">Difficulty</div>
+    <h2>Start where you are.</h2>
+    <div class="diff-track">
+      <div class="diff-item">
+        <span class="diff-tag">Super Easy</span>
+        <span class="diff-range">1 &ndash; 10</span>
+      </div>
+      <div class="diff-item">
+        <span class="diff-tag">Easy</span>
+        <span class="diff-range">1 &ndash; 25</span>
+      </div>
+      <div class="diff-item">
+        <span class="diff-tag diff-active">Medium</span>
+        <span class="diff-range">1 &ndash; 50</span>
+      </div>
+      <div class="diff-item">
+        <span class="diff-tag">Hard</span>
+        <span class="diff-range">1 &ndash; 100</span>
+      </div>
+      <div class="diff-item">
+        <span class="diff-tag">Expert</span>
+        <span class="diff-range">1 &ndash; 500</span>
+      </div>
+      <div class="diff-item">
+        <span class="diff-tag diff-custom">Custom</span>
+        <span class="diff-range">Any range</span>
+      </div>
+    </div>
+    <p class="diff-note">Each level roughly doubles the range. <strong>Custom</strong> lets you set any min/max &mdash; useful if you&rsquo;re helping a child practice or rehabbing your own number sense.</p>
+  </section>
+
+  <section class="section why" id="learn">
+    <div class="section-label">Why It Works</div>
+    <h2>Mental math is a skill,<br />not a talent.</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 40 40" fill="none"><path d="M20 6v28M6 20h28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="2" stroke-dasharray="2 4"/></svg>
+        </div>
+        <h3>Spaced repetition</h3>
+        <p>Every session mixes operations randomly, forcing your brain to retrieve the right procedure each time &mdash; the mechanism that builds long-term recall.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 40 40" fill="none"><path d="M4 12h32M4 20h24M4 28h16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="34" cy="28" r="4" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>Progressive overload</h3>
+        <p>Difficulty scales from 1&ndash;10 to 1&ndash;500. As you master one level, the next pushes your working memory further &mdash; just like progressive weight training.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 40 40" fill="none"><path d="M20 4c-8 0-16 6-16 16s8 16 16 16 16-6 16-16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M28 14l-8 10-4-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Immediate feedback</h3>
+        <p>You know right away whether you were right or wrong &mdash; and what the correct answer was. That instant correction loop is what drives improvement.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section terminal-section" id="terminal">
+    <div class="section-label">Live Preview</div>
+    <h2>It looks like this.</h2>
+    <div class="terminal">
+      <div class="term-bar">
+        <span class="term-btn"></span>
+        <span class="term-btn"></span>
+        <span class="term-btn"></span>
+        <span class="term-title">QuickMath CLI</span>
+      </div>
+      <div class="term-body">
+        <div class="term-line head">  ___        _        __  __       _   _       _ _  </div>
+        <div class="term-line head"> / _ \ _   _(_) ___  |  \/  | __ _| |_| |__   (_) |_ </div>
+        <div class="term-line head">| | | | | | | |/ __| | |\/| |/ _` | __| '_ \  | | __|</div>
+        <div class="term-line head">| |_| | |_| | | (__  | |  | | (_| | |_| | | | | | |_ </div>
+        <div class="term-line head"> \__\_\\__,_|_|\___| |_|  |_|\__,_|\__|_| |_| |_|\__|</div>
+        <div class="term-line rule">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</div>
+        <div class="term-line dim">Fast Math Challenge</div>
+        <div class="term-line spacer"></div>
+        <div class="term-line">Question 7/20 &nbsp;Score: <span class="g">12</span> &nbsp;Streak: <span class="y">5</span> &nbsp;Lives: <span class="r">&#9829;&#9829;&#9829;</span> &nbsp;Accuracy: <span class="b">71%</span></div>
+        <div class="term-line spacer"></div>
+        <div class="term-line box">
+          <span class="b">42</span>
+          <span class="g"> &times; </span>
+          <span class="b">3</span>
+          <span> =</span>
+        </div>
+        <div class="term-line spacer"></div>
+        <div class="term-line prompt"><span class="dim">&gt;&gt;</span> <span class="cursor">&block;</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section ops">
+    <div class="section-label">Operations</div>
+    <h2>Pick your &mdash; or pick all three.</h2>
+    <div class="ops-showcase">
+      <div class="op-block">
+        <div class="op-symbol plus">+</div>
+        <div class="op-desc">
+          <h3>Addition</h3>
+          <p>The foundation. Quick addition fluency makes subtraction and multiplication easier by extension.</p>
+        </div>
+      </div>
+      <div class="op-block">
+        <div class="op-symbol minus">&minus;</div>
+        <div class="op-desc">
+          <h3>Subtraction</h3>
+          <p>Often the hardest for beginners. Requires holding the minuend while computing the difference.</p>
+        </div>
+      </div>
+      <div class="op-block">
+        <div class="op-symbol mult">&times;</div>
+        <div class="op-desc">
+          <h3>Multiplication</h3>
+          <p>Capped at 20&times;20 to stay within mental range. Drills the times tables until they&rsquo;re automatic.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section build">
+    <div class="section-label">Get Started</div>
+    <h2>One binary, no dependencies.</h2>
+    <div class="build-grid">
+      <div class="build-card">
+        <div class="build-card-header">Download</div>
+        <p>Grab the latest release for your OS. No installers, no runtimes, no accounts.</p>
+        <a href="https://github.com/pikmintea/QuickMath-CLI/releases" class="btn btn-primary btn-sm">Releases &rarr;</a>
+      </div>
+      <div class="build-card">
+        <div class="build-card-header">Build from source</div>
+        <p>Requires .NET 10 SDK. Clone, publish, run.</p>
+        <div class="build-code">
+          <div class="bc-header">
+            <span>shell</span>
+            <button class="copy-btn" onclick="copyCode(this)" title="Copy">&#10697;</button>
+          </div>
+          <pre><code>git clone https://github.com/pikmintea/QuickMath-CLI.git&#10;cd QuickMath-CLI&#10;dotnet publish src/QuickMathCLI.csproj \&#10;  -r win-x64 -c Release --self-contained true</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <span class="footer-mark">QuickMath CLI</span>
+        <a href="https://github.com/pikmintea/QuickMath-CLI">Source</a>
+        <a href="https://github.com/pikmintea/QuickMath-CLI/blob/main/LICENSE">AGPL v3</a>
+        <a href="https://github.com/pikmintea/QuickMath-CLI/issues">Issues</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 &middot; Built with <a href="https://spectreconsole.net/">Spectre.Console</a> and .NET 10</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCode(btn) {
+      var pre = btn.closest('.build-code').querySelector('code');
+      var text = pre.textContent.trim();
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(function() {
+          var orig = btn.innerHTML;
+          btn.innerHTML = '&#10003;';
+          btn.classList.add('copied');
+          setTimeout(function() {
+            btn.innerHTML = orig;
+            btn.classList.remove('copied');
+          }, 1500);
+        });
+      }
+    }
+  </script>
+</body>
+</html>
